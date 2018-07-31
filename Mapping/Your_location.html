@@ -15,7 +15,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_39619ad2fe93490983142e3dcce28490 {
+            <style> #map_5bbe0a0029f34b2a9c2770ccdb761a4e {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -27,7 +27,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_39619ad2fe93490983142e3dcce28490" ></div>
+            <div class="folium-map" id="map_5bbe0a0029f34b2a9c2770ccdb761a4e" ></div>
         
 </body>
 <script>    
@@ -37,9 +37,9 @@
                 var bounds = null;
             
 
-            var map_39619ad2fe93490983142e3dcce28490 = L.map(
-                                  'map_39619ad2fe93490983142e3dcce28490',
-                                  {center: [23.2667,77.4],
+            var map_5bbe0a0029f34b2a9c2770ccdb761a4e = L.map(
+                                  'map_5bbe0a0029f34b2a9c2770ccdb761a4e',
+                                  {center: [12.861318,80.211384],
                                   zoom: 30,
                                   maxBounds: bounds,
                                   layers: [],
@@ -49,7 +49,7 @@
             
         
     
-            var tile_layer_423c8e70328c44e785fb0dfbd87ea70a = L.tileLayer(
+            var tile_layer_dc06fac4cdb547b4991c7404097a33e8 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
   "attribution": null,
@@ -59,6 +59,76 @@
   "noWrap": false,
   "subdomains": "abc"
 }
-                ).addTo(map_39619ad2fe93490983142e3dcce28490);
+                ).addTo(map_5bbe0a0029f34b2a9c2770ccdb761a4e);
+        
+    
+            var feature_group_1065ff928f554b679820fdc706dc3a07 = L.featureGroup(
+                ).addTo(map_5bbe0a0029f34b2a9c2770ccdb761a4e);
+        
+    
+
+            var marker_109865fa2516405caa44bf59bedd72e5 = L.marker(
+                [12.861318,80.211384],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1065ff928f554b679820fdc706dc3a07);
+            
+    
+
+                var icon_eba25192557a47e49230b35b5b43a2c5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_109865fa2516405caa44bf59bedd72e5.setIcon(icon_eba25192557a47e49230b35b5b43a2c5);
+            
+    
+            var popup_53e0281560bb49528c1c9e11456bdb85 = L.popup({maxWidth: '300'});
+
+            
+                var html_3126cbfa6f3b41ce986379be90318067 = $('<div id="html_3126cbfa6f3b41ce986379be90318067" style="width: 100.0%; height: 100.0%;">Sreeram is Here!</div>')[0];
+                popup_53e0281560bb49528c1c9e11456bdb85.setContent(html_3126cbfa6f3b41ce986379be90318067);
+            
+
+            marker_109865fa2516405caa44bf59bedd72e5.bindPopup(popup_53e0281560bb49528c1c9e11456bdb85);
+
+            
+        
+    
+
+            var marker_a47b817c3afb4bb08dd8335bf233ca1f = L.marker(
+                [12.899242,80.228082],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1065ff928f554b679820fdc706dc3a07);
+            
+    
+
+                var icon_1af00c2c891b472bb7312b9a97d23f60 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a47b817c3afb4bb08dd8335bf233ca1f.setIcon(icon_1af00c2c891b472bb7312b9a97d23f60);
+            
+    
+            var popup_ec6d57ecc8cd4098bf685635e04985d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_dbedd468e1824625b31f09d277821f8b = $('<div id="html_dbedd468e1824625b31f09d277821f8b" style="width: 100.0%; height: 100.0%;">Sathvik is Here!</div>')[0];
+                popup_ec6d57ecc8cd4098bf685635e04985d8.setContent(html_dbedd468e1824625b31f09d277821f8b);
+            
+
+            marker_a47b817c3afb4bb08dd8335bf233ca1f.bindPopup(popup_ec6d57ecc8cd4098bf685635e04985d8);
+
+            
         
 </script>
