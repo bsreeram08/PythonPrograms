@@ -1,6 +1,5 @@
 a=int(input("Enter the Numbers  \n"))
 b=int(input())
-
 c=raw_input("Enter the idiot's name:")
 print a+b
 print "The idiot's name is " + c
