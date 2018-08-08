@@ -1,0 +1,29 @@
+from tkinter import *
+def kg_to_all():
+    grams=float(t1_value.get())*1000
+    pounds=float(t1_value.get())*2.20462
+    ounces=float(t1_value.get())*35.274
+    dispgrams.insert(END,grams)
+    disppounds.insert(END,pounds)
+    dispounces.insert(END,ounces)
+window=Tk()
+disp=Label(window,text="KiloGram-->")
+disp.grid(row=0,column=0)
+t1_value=StringVar()
+t1=Entry(window,textvariable=t1_value)
+t1.grid(row=0,column=1)
+b1=Button(window,text="Convert",command=kg_to_all)
+b1.grid(row=0,column=2)
+disp=Label(window,text="Grams-->")
+disp.grid(row=1,column=0)
+dispgrams=Text(window,height=1,width=15)
+dispgrams.grid(row=1,column=1)
+disp=Label(window,text="Pounds-->")
+disp.grid(row=2,column=0)
+disppounds=Text(window,height=1,width=15)
+disppounds.grid(row=2,column=1)
+disp=Label(window,text="Ounces-->")
+disp.grid(row=3,column=0)
+dispounces=Text(window,height=1,width=15)
+dispounces.grid(row=3,column=1)
+window.mainloop()
